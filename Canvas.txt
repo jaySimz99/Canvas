@@ -1,0 +1,96 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<script>
+
+
+       function drawShapes() {
+
+
+      var trianglePurple = canvas.getContext('2d');//Creating triangle variable
+               trianglePurple.beginPath();
+            trianglePurple.moveTo(50, 130);//Points of the triangle 
+            trianglePurple.lineTo(0, 130);
+            trianglePurple.lineTo(50, 50);
+            trianglePurple.fillStyle = "rgb(100,20,123)";//Determining triangle color
+            trianglePurple.fill();//filling triangle
+            
+             var quadBlue = canvas.getContext('2d');
+            quadBlue.beginPath();
+            quadBlue.moveTo(70, 60);
+            quadBlue.lineTo(170, 60);
+            quadBlue.lineTo(200, 120);
+            quadBlue.lineTo(100, 120);
+            quadBlue.fillStyle = "rgb(20,120,200)";
+            quadBlue.fill();
+            
+            var triGreen = canvas.getContext('2d');
+            
+            triGreen.beginPath();
+            triGreen.moveTo(80,120);
+            triGreen.lineTo(20, 200);
+            triGreen.lineTo(300, 200);
+            triGreen.fillStyle = "rgb(0,200,12)";
+            triGreen.fill();
+    
+	    var pinkCircle = canvas.getContext("2d");
+            
+	    pinkCircle.beginPath();
+	    pinkCircle.arc(200, 40, 30, 0, 2 * Math.PI);
+            pinkCircle.fillStyle = "rgb(200,0,40)";
+            pinkCircle.fill();
+            
+            var redSemicircle = canvas.getContext("2d");
+            
+	    redSemicircle.beginPath();
+	    redSemicircle.arc(250, 75, 40, 0, 1 * Math.PI);
+            redSemicircle.fillStyle = "rgb(200,0,0)";
+            redSemicircle.fill();
+            
+             var quadOrange = canvas.getContext('2d');
+            
+           quadOrange.beginPath();
+           quadOrange.moveTo(200, 120);
+           quadOrange.lineTo(270, 120);
+           quadOrange.lineTo(270, 200);
+           quadOrange.lineTo(200, 200);
+           quadOrange.fillStyle = "rgb(200,120,0)";
+           quadOrange.fill();
+           
+            var greenSquare = canvas.getContext('2d');
+            
+           greenSquare.beginPath();
+           greenSquare.moveTo(240, 0);
+           greenSquare.lineTo(300, 0);
+           greenSquare.lineTo(300, 60);
+           greenSquare.lineTo(240, 60);
+           greenSquare.fillStyle = "rgb(20,120,23)";
+           greenSquare.fill();
+           
+             var yellowDiamond = canvas.getContext('2d');
+            
+           yellowDiamond.beginPath();
+           yellowDiamond.moveTo(25, 0);
+           yellowDiamond.lineTo(50, 30);
+           yellowDiamond.lineTo(25, 70);
+           yellowDiamond.lineTo(0, 30);
+           yellowDiamond.fillStyle = "rgb(250,200,0)";
+           yellowDiamond.fill();
+           
+            var triBlue = canvas.getContext('2d');
+            
+           triBlue.beginPath();
+           triBlue.moveTo(80,0);
+           triBlue.lineTo(50, 50);
+           triBlue.lineTo(110, 50);
+           triBlue.fillStyle = "rgb(50,20,100)";
+           triBlue.fill();
+}
+    
+</script>
+</head>
+<body
+onload="drawShapes();">
+   <canvas id="canvas"></canvas>
+</body>
+</html>
